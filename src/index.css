@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        background: transparent;
+        outline: none;
+        box-shadow: none;
+    }
+
+    :root {
+        font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+        line-height: 1.5;
+        font-weight: 400;
+
+        color: rgba(255, 255, 255, 0.87);
+        background-color: #0f1214;
+
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@layer components {
+
+}
+
+@layer utilities {
+    .shrink-on-click {
+        @apply active:scale-95 transition;
+    }
+}
+
